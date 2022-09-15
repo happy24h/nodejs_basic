@@ -58,7 +58,6 @@ body {
 
   .create-user-container label{
     display: block;
-
   }
 
   .create-user-container .btn-submit {
@@ -80,3 +79,12 @@ body {
     margin-top: 15px;
     cursor: pointer;
   }
+
+  .upload-file-container {
+    padding: 15px;
+  }
+
+  .update-file-container label {
+    display: block;
+  }
+
