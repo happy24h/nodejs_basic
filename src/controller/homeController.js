@@ -80,9 +80,13 @@ let handleUploadFile = async(req, res) => {
 
 }
 
+let handleUploadMultipleFiles = (req, res) => {
+    return res.send('Please select an image to upload')
+}
+
 
 module.exports = {
     getHomePage, getDetailPage, createNewUser,
     deleteUser, getEditPage, postUpdateUser,
-    getUploadFilePage, handleUploadFile   
+    getUploadFilePage, handleUploadFile, handleUploadMultipleFiles   
 }

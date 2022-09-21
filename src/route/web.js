@@ -39,6 +39,7 @@ const initWebRoute = (app) => {
 
     router.get('/upload', homeController.getUploadFilePage);
     router.post('/upload-profile-pic',upload.single('profile_pic'), homeController.handleUploadFile);
+    router.post('/upload-multiple-images', homeController.handleUploadMultipleFiles);
 
     router.get('/test', (req, res) => {
         res.render('test/index.ejs')
